@@ -21,7 +21,7 @@ class loginPage extends State<login>{
   int _counter = 0;
 
   void _incrementCounter() {
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>login()));
+    //Navigator.push(context, MaterialPageRoute(builder: (context)=>login()));
     setState(() {
       _counter++;
     });
@@ -37,8 +37,8 @@ class loginPage extends State<login>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Text(
+              Localizations.localeOf(context).languageCode,
             ),
             Text(
               '$_counter',
