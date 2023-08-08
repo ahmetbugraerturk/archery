@@ -42,6 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
       debugShowCheckedModeBanner: false,
       title: "Arcoach",
       theme: ThemeData(
+        primaryColor: Color(0xFF607262),
+
       ),
       localizationsDelegates: [
         AppLocalizations.delegate,
@@ -52,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
       supportedLocales: [
         Locale("en"),
         Locale("tr")
-      ], //Locale kodları dil ayarlıyor
+      ], //Locale kodları dil ayarlıyor    //AppLocalizations.of(context).welcome
       home: loginAndRegister(),
     );
   }
@@ -121,7 +123,7 @@ class loginAndRegisterPage extends State<loginAndRegister>{
                                         });
                                       },
                                       child: Center(
-                                        child: Text("Don't have an account?",
+                                        child: Text(AppLocalizations.of(context).dontAccount,
                                           style: TextStyle(
                                             fontSize: 14,
                                             color: Color(0xFF1C1C1C),

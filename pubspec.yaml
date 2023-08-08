@@ -44,9 +44,15 @@ dependencies:
   flutter_localization: ^0.1.13
   intl: any
 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "appIcon/appIcon.png"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -72,6 +78,8 @@ flutter:
     - lib/assets/googleLogo.png
     - lib/assets/appleLogo.png
     - lib/assets/facebookLogo.png
+    - lib/assets/appLogoSVG.png
+    - appIcon/appIcon.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

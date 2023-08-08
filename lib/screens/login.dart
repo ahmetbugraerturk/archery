@@ -13,7 +13,7 @@ class Login extends StatelessWidget {
           height: 40,
         ),
         Text(
-          "Welcome to",
+          AppLocalizations.of(context).welcome,
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class Login extends StatelessWidget {
           ),
         ),
         Text(
-          "Please login to continue",
+          AppLocalizations.of(context).pleaseLogin,
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class Login extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
           decoration: InputDecoration(
-            hintText: 'Password',
+            hintText: AppLocalizations.of(context).password,
             hintStyle: TextStyle(
               fontSize: 16,
               color: Color(0xFFBCCFBB),
@@ -119,7 +119,7 @@ class Login extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                "LOGIN",
+                AppLocalizations.of(context).login.toUpperCase(),
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -134,7 +134,7 @@ class Login extends StatelessWidget {
         ),
         Center(
           child: Text(
-            "Forgot Password?",
+            AppLocalizations.of(context).forgotPass,
             style: TextStyle(
               fontSize: 14,
               color: Color(0xFF1C1C1C),

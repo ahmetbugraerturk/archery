@@ -1,5 +1,10 @@
 {
     "appName": "Archery",
     "login": "Login",
-    "register": "Retister"
+    "register": "Retister",
+    "pleaseLogin": "Please login to continue",
+    "welcome": "Welcome to",
+    "forgotPass": "Forgot Password?",
+    "dontAccount": "Don't have an account?",
+    "password": "Password"
 }

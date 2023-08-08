@@ -1,5 +1,10 @@
 {
     "appName": "Okçuluk",
     "login": "Giriş Yap",
-    "register": "Kayıt Ol"
+    "register": "Kayıt Ol",
+    "pleaseLogin": "Lütfen devam etmek için giriş yapınız",
+    "welcome": "Hoş Geldiniz",
+    "forgotPass": "Şifremi unuttum",
+    "dontAccount": "Henüz hesabın yok mu?",
+    "password": "Şifre"
 }
