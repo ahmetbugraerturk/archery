@@ -9,6 +9,9 @@ class Login extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+        SizedBox(
+          height: 40,
+        ),
         Text(
           "Welcome to",
           style: TextStyle(
