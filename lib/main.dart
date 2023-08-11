@@ -84,7 +84,7 @@ class loginAndRegisterPage extends State<loginAndRegister>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF607262),
+      backgroundColor: Color(0xFFFFFFFF),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -126,7 +126,7 @@ class loginAndRegisterPage extends State<loginAndRegister>{
                                         child: Text(AppLocalizations.of(context).dontAccount,
                                           style: TextStyle(
                                             fontSize: 14,
-                                            color: Color(0xFF1C1C1C),
+                                            color: Color(0xFF000000),
                                             height: 1,
                                           ),
                                         ),
@@ -185,15 +185,16 @@ class CurvePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint();
-    paint.color = Color(0xFFBCCFBB);
-    paint.style = PaintingStyle.fill;
+    paint.color = Color(0xFF000000);
+    paint.style = PaintingStyle.stroke;
+    paint.strokeWidth=5;
 
     Path path = Path();
-    path.moveTo(0, 0);
-    path.lineTo(0, size.height);
-    path.quadraticBezierTo(size.width * 0.5, outterCurve ? size.height + 110 : size.height - 110, size.width, size.height);
-    path.lineTo(size.width, 0);
-    path.close();
+    path.moveTo(size.width-size.width*1.07, size.height);
+    //path.lineTo(0, size.height);
+    path.quadraticBezierTo(size.width * 0.5, outterCurve ? size.height + 110 : size.height - 110, size.width*1.07, size.height);
+    //path.lineTo(size.width, 0);
+    //path.close();
 
     canvas.drawPath(path, paint);
   }

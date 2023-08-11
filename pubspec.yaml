@@ -43,6 +43,21 @@ dependencies:
   cloud_firestore: ^4.8.3
   flutter_localization: ^0.1.13
   intl: any
+  flutter_native_splash: ^2.3.1
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#ffffff"
+  color_dark: "#ffffff"
+  image: "lib/assets/appLogoBlack.png"
+  image_dark: "lib/assets/appLogoBlack.png"
+  android12:
+    color: "#ffffff"
+    color_dark: "#ffffff"
+    image: "lib/assets/appLogoBlack.png"
+    image_dark: "lib/assets/appLogoBlack.png"
 
 flutter_icons:
   android: "launcher_icon"
@@ -79,6 +94,7 @@ flutter:
     - lib/assets/appleLogo.png
     - lib/assets/facebookLogo.png
     - lib/assets/appLogoSVG.png
+    - lib/assets/appLogoBlack.png
     - appIcon/appIcon.png
   # To add assets to your application, add an assets section, like this:
   # assets:

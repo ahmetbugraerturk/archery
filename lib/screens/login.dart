@@ -17,7 +17,7 @@ class Login extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF1C1C1C),
+            color: Color(0xFF000000),
             height: 2,
           ),
         ),
@@ -26,7 +26,7 @@ class Login extends StatelessWidget {
           style: TextStyle(
             fontSize: 40,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF1C1C1C),
+            color: Color(0xFF000000),
             letterSpacing: 2,
             height: 1,
           ),
@@ -36,7 +36,7 @@ class Login extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF1C1C1C),
+            color: Color(0xFF000000),
             height: 1,
           ),
         ),
@@ -46,25 +46,26 @@ class Login extends StatelessWidget {
         TextField(
           style: TextStyle(
             fontSize: 16,
-            color: Color(0xFFBCCFBB),
+            color: Color(0xFF000000),
             fontWeight: FontWeight.bold,
           ),
           decoration: InputDecoration(
             hintText: 'Email',
             hintStyle: TextStyle(
               fontSize: 16,
-              color: Color(0xFFBCCFBB),
+              color: Color(0xFF000000),
               fontWeight: FontWeight.bold,
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(25),
               borderSide: BorderSide(
-                width: 0,
+                width: 1,
                 style: BorderStyle.none,
+                color: Color(0xFF000000),
               ),
             ),
-            filled: true,
-            fillColor: Color(0xFF607262),
+            //filled: true,
+            //fillColor: Color(0xFF607262),
             contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
           ),
         ),
@@ -74,25 +75,26 @@ class Login extends StatelessWidget {
         TextField(
           style: TextStyle(
             fontSize: 16,
-            color: Color(0xFFBCCFBB),
+            color: Color(0xFF000000),
             fontWeight: FontWeight.bold,
           ),
           decoration: InputDecoration(
             hintText: AppLocalizations.of(context).password,
             hintStyle: TextStyle(
               fontSize: 16,
-              color: Color(0xFFBCCFBB),
+              color: Color(0xFF000000),
               fontWeight: FontWeight.bold,
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(25),
               borderSide: BorderSide(
-                width: 0,
+                width: 1,
                 style: BorderStyle.none,
+                color: Color(0xFF000000)
               ),
             ),
-            filled: true,
-            fillColor: Color(0xFF607262),
+            //filled: true,
+            //fillColor: Color(0xFF607262),
             contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
           ),
         ),
@@ -110,7 +112,7 @@ class Login extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Color(0xFF1C1C1C).withOpacity(0.2),
+                  color: Color(0xFF000000).withOpacity(0.2),
                   spreadRadius: 3,
                   blurRadius: 4,
                   offset: Offset(0, 3),
@@ -123,7 +125,7 @@ class Login extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFFBCCFBB),
+                  color: Color(0xFFFFFFFF),
                 ),
               ),
             ),
@@ -137,7 +139,7 @@ class Login extends StatelessWidget {
             AppLocalizations.of(context).forgotPass,
             style: TextStyle(
               fontSize: 14,
-              color: Color(0xFF1C1C1C),
+              color: Color(0xFF000000),
               height: 1,
             ),
           ),
@@ -151,12 +153,12 @@ class Login extends StatelessWidget {
             children: [
               Center(
                 child: FloatingActionButton(
-                  backgroundColor: Color(0xFF607262),
+                  backgroundColor: Color(0xFF000000),
                   onPressed: (){},
                   child: SizedBox(
                     height: 35,
                       width: 35,
-                      child: Image.asset("lib/assets/googleLogo.png"),
+                      child: Image.asset("lib/assets/googleLogo.png",color: Color(0xFFFFFFFF),),
                   ),
                 ),
               ),
@@ -165,12 +167,12 @@ class Login extends StatelessWidget {
               ),
               Center(
                 child: FloatingActionButton(
-                  backgroundColor: Color(0xFF607262),
+                  backgroundColor: Color(0xFF000000),
                   onPressed: (){},
                   child: SizedBox(
                     height: 35,
                     width: 35,
-                    child: Image.asset("lib/assets/appleLogo.png"),
+                    child: Image.asset("lib/assets/appleLogo.png",color: Color(0xFFFFFFFF),),
                   ),                ),
               ),
               SizedBox(
@@ -178,12 +180,12 @@ class Login extends StatelessWidget {
               ),
               Center(
                 child: FloatingActionButton(
-                  backgroundColor: Color(0xFF607262),
+                  backgroundColor: Color(0xFF000000),
                   onPressed: (){},
                   child: SizedBox(
                     height: 30,
                     width: 30,
-                    child: Image.asset("lib/assets/facebookLogo.png"),
+                    child: Image.asset("lib/assets/facebookLogo.png",color: Color(0xFFFFFFFF),),
                   ),                ),
               ),
             ],
